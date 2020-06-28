@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1200">
+    <title>Web-page</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./assets/stylesheets/cs.animate.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="dist/css/bootstrap-select.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap-select.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,800italic,800,700italic,700,600italic,600,400italic,400|Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="./assets/javascripts/cs.script.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="skypasser-header">
+            <div class="skypasser-logo"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Авиабилеты</a>
+                    </li>
+                    <li>
+                        <a href="index2.html" class="active">Отели</a>
+                    </li>
+                    <li>
+                        <a href="index3.html">Авто</a>
+                    </li>
+                    <li>
+                        <a href="index4.html">Путеводитель</a>
+                    </li>
+                    <li>
+                        <a href="index5.html">Блоги</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="skypasser-user-menu">
+                <div class="skypasser-user"></div>
+                <div class="skypasser-valute">
+                    <select class="selectpicker show-tick form-control">
+                        <option>RUB</option>
+                        <option>EUR</option>
+                    </select>
+                </div>
+                <div class="skypasser-flag">
+                    <select class="selectpicker show-tick form-control">
+                        <option data-content="<span class='label label-success1'>ENGLISH</span>
+						">ENGLISH
+                        </option>
+                        <option data-content="<span class='label label-success2'>РУССКИЙ</span>
+					">РУССКИЙ
+                        </option>
+                        <option data-content="<span class='label label-success3'>简体中文 简体中文</span>
+				">简体中文 简体中文
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skypasser-bg-area skypasser-bg2">
+        <div class="container skypasser-header-main">
+            <h1 class="not-animated" data-animate="fadeInUp" data-delay="200">Найди отель своей мечты</h1>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="col-sm-6 col-md-3 col-lg-6">
+                            <label for="">Страна или город</label>
+                            <input class="tags" type="text" placeholder="Куда Вы хотите поехать">
+                            <div class="after-icon-location"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <label for="">Прибытие</label>
+                            <input type="text" class="datepicker"></div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <label for="">Выезд</label>
+                            <input type="text" class="datepicker"></div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <label for="">Цель поездки</label>
+                            <select id="basic" class="selectpicker show-tick form-control">
+                                <option>Работа</option>
+                                <option>Отдых</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                            <label for="">Комнаты</label>
+                            <select id="rooms" class="selectpicker show-tick form-control">
+                                <option>1 комната</option>
+                                <option>2 комнаты</option>
+                                <option>3 комнаты</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-9 col-lg-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <label id="ll1" for="">Взрослые</label>
+                                    <select id="people" class="selectpicker show-tick form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 select-one select-one2">
+                                            <label for="">Дети</label>
+                                            <select id="childs1" class="selectpicker show-tick form-control">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 hide-one hide-one2">
+                                            <label for="">Возраст</label>
+                                            <select id="basic" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="childsar" class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-6 flr bg-mga">
+                                            <label for="">Возраст 2</label>
+                                            <select id="childs" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nowshow1" class="col-sm-12 col-md-9 col-lg-6 col-xs-12 flr">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <label id="ll2" for="">Взрослые</label>
+                                    <select id="people" class="selectpicker show-tick form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 sell2 sell">
+                                            <label for="">Дети</label>
+                                            <select id="childs2" class="selectpicker show-tick form-control">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 hidd2 hidd">
+                                            <label for="">Возраст</label>
+                                            <select id="basic" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="childsar2" class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-6 flr bg-mga">
+                                            <label for="">Возраст 2</label>
+                                            <select id="childs2" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nowshow2" class="col-sm-12 col-md-9 col-lg-6 col-xs-12 flr">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <label id="ql1" for="">Взрослые</label>
+                                    <select id="people" class="selectpicker show-tick form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 sell2c sellc">
+                                            <label for="">Дети</label>
+                                            <select id="schilds2" class="selectpicker show-tick form-control">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 hidd2c hiddc">
+                                            <label for="">Возраст</label>
+                                            <select id="basic" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="schildsar2" class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-6 flr bg-mga">
+                                            <label for="">Возраст 2</label>
+                                            <select id="childs2" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row marg-top-new">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <label id="ql2" for="">Взрослые</label>
+                                    <select id="people" class="selectpicker show-tick form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 sell2e selle">
+                                            <label id="ql3" for="">Дети</label>
+                                            <select id="schilds3" class="selectpicker show-tick form-control">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 hidd2e hidde">
+                                            <label id="ql4" for="">Возраст</label>
+                                            <select id="basic" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="schildsar3" class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-6 flr bg-mga">
+                                            <label for="">Возраст 2</label>
+                                            <select id="schilds3" class="selectpicker show-tick form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a class="button button-nw" href="search.html">поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="skypasser-content-center">
+        <div class="skypasser-bg-shadow">
+            <div class="shadow-plach not-animated" data-animate="flipInY" data-delay="400"></div>
+        </div>
+        <div class="container">
+            <h2 class="not-animated" data-animate="fadeInLeft" data-delay="300">Топ 50 отелей мира</h2>
+            <div id="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-5">Европа</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-1">Северная Америка</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">Южная Америка</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-3">Африка</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-4">Россия</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-6">Азия</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-7">Австралия</a>
+                    </li>
+                </ul>
+                <div id="tabs-1">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-a1.png" alt=""></div>
+                                        <div class="txt-scroll">Нью-Йорк</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-a2.png" alt=""></div>
+                                        <div class="txt-scroll">Лос-Анджелес</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-a3.png" alt=""></div>
+                                        <div class="txt-scroll">Чикаго</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-a4.png" alt=""></div>
+                                        <div class="txt-scroll">Вашингтон</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-a5.png" alt=""></div>
+                                        <div class="txt-scroll">Сиэтл</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Хьюстон</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Филадельфия</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Даллас</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Сан-Антонио</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Сан-Диего</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-2">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">11</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">12</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-3">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">11</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">12</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-4">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">11</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">12</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-5">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-b1.png" alt=""></div>
+                                        <div class="txt-scroll">Амстердам</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-b2.png" alt=""></div>
+                                        <div class="txt-scroll">Лондон</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-b3.png" alt=""></div>
+                                        <div class="txt-scroll">Осло</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-b4.png" alt=""></div>
+                                        <div class="txt-scroll">Тулуза</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/scroll-b5.png" alt=""></div>
+                                        <div class="txt-scroll">Париж</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Милан</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Афины</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Белград</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Берлин</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Тель-Авив</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">11</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Будапешт</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">12</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Брюссель</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-6">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Баку</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Ереван</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Дакка</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Читтагонг</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Ханой</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="tabs-7">
+                    <section class="max-width-example">
+                        <!-- content -->
+                        <div class="content-1 content horizontal-images">
+                            <ul>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">1</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="500">
+                                        <div class="podl-scroll">2</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="700">
+                                        <div class="podl-scroll">3</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="900">
+                                        <div class="podl-scroll">4</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="1100">
+                                        <div class="podl-scroll">5</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">6</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">7</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">8</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">9</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">10</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">11</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="scroll-bg not-animated" data-animate="fadeInLeft" data-delay="300">
+                                        <div class="podl-scroll">12</div>
+                                        <div class="scroll-img">
+                                            <img src="img/placeholder.png" alt=""></div>
+                                        <div class="txt-scroll">Город</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/datapicker.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <div class="container">
+        <div class="bg-otz">
+            <div class="slider autoplay">
+                <div>
+                    <div class="in-area">
+                        <div class="oblv-area">
+                            <div class="cavs"></div>
+                            <div class="otz-area">
+                                Cпасибо Skypasser за качественный сервис, это так важно, особенно когда дело касается отдыха
+                                <div class="avatar-user-otz">
+                                    <img src="img/otz1.jpg" alt=""></div>
+                                <p>
+                                    Елена Летучая
+                                    <span>телеведущая</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="in-area">
+                        <div class="oblv-area">
+                            <div class="cavs"></div>
+                            <div class="otz-area">
+                                Здесь хороший выбор отелей, детальное их описание. Никаких проблем с оплатой. Все быстро и надежно! Спасибо вам!
+                                <div class="avatar-user-otz">
+                                    <img src="img/otz4.jpg" alt=""></div>
+                                <p>
+                                    Денис Бойко
+                                    <span>FC Dnipro</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="in-area">
+                        <div class="oblv-area">
+                            <div class="cavs"></div>
+                            <div class="otz-area">
+                                Очень часто путешествую и считаю это делать только
+                                <br>
+                                через Skypasser
+                                <div class="avatar-user-otz">
+                                    <img src="img/otz6.jpg" alt=""></div>
+                                <p>
+                                    Комил Рузаев
+                                    <span>Основатель КупиКупон.ру</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="in-area">
+                        <div class="oblv-area">
+                            <div class="cavs"></div>
+                            <div class="otz-area">
+                                Что касается цен, то по своему опыту скажу - сравнивая с другими сервисами бронирования, на skypasser ощутимая разница в цене. Именно низкой цены.
+                                <div class="avatar-user-otz">
+                                    <img src="img/otz3.jpg" alt=""></div>
+                                <p>
+                                    Сергей Парамонов
+                                    <span>Участник ТВ Шоу канал Пятница</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="in-area">
+                        <div class="oblv-area">
+                            <div class="cavs"></div>
+                            <div class="otz-area">
+                                Пользуюсь только этим сайтом для путешествия!
+                                <br>
+                                Цены и сервис на высшем уровне!
+                                <div class="avatar-user-otz">
+                                    <img src="img/otz5.jpg" alt=""></div>
+                                <p>
+                                    Роман Кричмарев
+                                    <span>Президент Вебтрансфер</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+
+</html>
